@@ -34,8 +34,11 @@ jobs:
 
       - name: Extract Android project
         run: |
-          unzip -q 21-analytics-cloud-build-fixed.zip -d project
-          test -f project/settings.gradle.kts
+          unzip -q 21-analytics-cloud-build-fixed-v2.zip -d project
+    
+    
+    
+  
 
       - name: Build APK
         run: gradle --no-daemon -p project :app:assembleDebug
